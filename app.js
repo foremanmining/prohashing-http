@@ -46,7 +46,7 @@ connection.on('profitability', (update) => {
             profitabilities[key] = update[key]
         });
     }
-    lastUpdate = moment().format()
+    profitabilityLastUpdate = moment().format()
 })
 connection.on("connected", (details, session) => {
     // Connected to the API
