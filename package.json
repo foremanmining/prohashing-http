@@ -6,12 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "OBM, LLC",
-  "license": "GPL-3.0",
   "repository": {
-    "type" : "git",
-    "url" : "git@github.com:delawr0190/prohashing-http.git"
+    "type": "git",
+    "url": "git+https://github.com/delawr0190/prohashing-http.git"
   },
+  "author": "",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/delawr0190/prohashing-http/issues"
+  },
+  "homepage": "https://github.com/delawr0190/prohashing-http#readme",
   "dependencies": {
     "express": "^4.16.4",
     "moment": "^2.23.0",

@@ -5,16 +5,16 @@ FROM node:8
 WORKDIR /app
 
 # Install dependencies
-COPY package.json /app
+COPY package*.json /app/
 RUN npm install
 
 # Copy sources
-COPY . /app
+COPY . /app/
 
 # Environment variables
 ENV SERVER_HOST 'localhost'
 ENV SERVER_PORT 8081
-ENV PROHASHING_API_KEY
+ENV PROHASHING_API_KEY 'undefined'
 
 # Run
 CMD node app.js
