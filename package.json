@@ -19,6 +19,7 @@
   "dependencies": {
     "express": "^4.16.4",
     "moment": "^2.23.0",
-    "prohashing": "^1.0.4"
+    "prohashing": "^1.0.4",
+    "ws": "^2.3.1"
   }
 }
