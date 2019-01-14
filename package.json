@@ -1,13 +1,17 @@
 {
-  "name": "foreman-survey-prohashing",
+  "name": "prohashing-http",
   "version": "1.0.0",
-  "description": "",
+  "description": "A node web server that reads from the ProHashing WAMP API and provides the information via an HTTP API.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "OBM, LLC",
+  "license": "GPL-3.0",
+  "repository": {
+    "type" : "git",
+    "url" : "git@github.com:delawr0190/prohashing-http.git"
+  },
   "dependencies": {
     "express": "^4.16.4",
     "moment": "^2.23.0",
