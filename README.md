@@ -2,7 +2,7 @@
 
 prohashing-http provides a node web server that connects to the ProHashing WAMP API, obtains profitability updates, and then exposes those updates via an HTTP API.
 
-The intention of this application is to provide a mechanism for applications that don't support consuming from WAMP services to instead obtain the same updates by periodically querying these HTTP handlers.
+The intention of this application is to provide a mechanism for services that don't support consuming WAMP updates, enabling them to obtain profitability metrics from prohashing via HTTP endpoints.
 
 ## Running ##
 
