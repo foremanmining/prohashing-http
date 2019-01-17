@@ -41,6 +41,7 @@ Returns metrics regarding whether the service is connected to the WAMP service a
 ```json
 {
   "connected": true,
+  "updating": true,
   "lastUpdates": {
     "profitability": "2019-01-15T00:00:52+00:00"
   }
