@@ -5,7 +5,7 @@ var prohashing = require('prohashing')
 var app = express()
 
 var connectionStatus = false;
-var profitabilityLastUpdate = moment().format()
+var profitabilityLastUpdate = moment()
 var profitabilities = {}
 
 // Status handler
@@ -13,10 +13,12 @@ app.get('/', function(req, res) {
     res.status(200).send();
 })
 app.get('/status', function(req, res) {
+    now = moment()
     res.send({
         connected: connectionStatus,
+        updating: moment.duration(now.diff(profitabilityLastUpdate)).asMinutes() <= 10,
         lastUpdates: {
-            profitability: profitabilityLastUpdate
+            profitability: profitabilityLastUpdate.format()
         }
     });
 })
@@ -46,7 +48,7 @@ connection.on('profitability', (update) => {
             profitabilities[key] = update[key]
         });
     }
-    profitabilityLastUpdate = moment().format()
+    profitabilityLastUpdate = moment()
 })
 connection.on("connected", (details, session) => {
     // Connected to the API

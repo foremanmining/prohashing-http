@@ -16,6 +16,10 @@ ENV SERVER_HOST 'localhost'
 ENV SERVER_PORT 8081
 ENV PROHASHING_API_KEY 'undefined'
 
+# Health check
+HEALTHCHECK --interval=60s --timeout=5s --start-period=30s \
+ CMD node healthcheck.js
+
 # Run
 CMD node app.js
 EXPOSE ${SERVER_PORT}
