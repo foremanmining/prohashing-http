@@ -14,7 +14,7 @@ SERVER_HOST=<server_host> SERVER_PORT=<server_port> PROHASHING_API_KEY=<api_key>
 
 Substitute `<server_host>`, `<server_port>`, and `<api_key>` accordingly.
 
-This repository also contains a Dockerfile to build this service into a container.  A healthcheck exists to verify that the service is updating (updates were observed from the ProHashing WAMP interface within the last 10 minutes).
+This repository also contains a Dockerfile to build this service into a Docker image.  A healthcheck exists to verify that the service is updating (updates were observed from the ProHashing WAMP interface within the last 10 minutes).
 
 ## Endpoints ##
 
