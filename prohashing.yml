@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+  prohashing:
+    image: delawr0190/prohashing-http:5cf589aa25ccd87c5e53069d98e850e7c1337222
+    ports:
+     - 8180:8081
+    environment:
+     - SERVER_PORT=8081
+     - SERVER_HOST=0.0.0.0
+     - PROHASHING_API_KEY=${PROHASHING_API_KEY}
