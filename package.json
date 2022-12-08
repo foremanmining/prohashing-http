@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/delawr0190/prohashing-http#readme",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "moment": "^2.23.0",
     "prohashing": "^1.0.4",
     "request": "^2.88.0",
